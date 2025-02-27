@@ -1,0 +1,371 @@
+:root{
+    --primary-black: #1a1a1a;
+}
+
+/* Default untuk desktop */
+/* ---------Element---------- */
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(82, 82, 82);
+}
+
+hr {
+    border: 1px solid rgb(212, 212, 212);
+    margin: 20px 0px;
+}
+
+header, footer {
+    padding: 10px 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input {
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgb(212, 212, 212);
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+form select {
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgb(212, 212, 212);
+    padding-left: 10px;
+    margin-bottom: 15px;
+    color: rgb(82, 82, 82);;
+}
+
+form button {
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgb(212, 212, 212);
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(0, 0, 50);
+    color: white;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: rgb(0, 0, 80);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form button:active {
+    background-color: rgb(0, 0, 29);
+    transform: scale(0.95);
+}
+
+/* ---------Section Class---------- */
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    background-color: rgb(0, 0, 80, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0px;
+    z-index: 1000;
+    color: white;
+    display: flex;
+    gap: 24px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu a:visited,
+.menu a:active,
+.menu a:focus {
+    color: white;
+}
+
+.menu a:hover{
+    color: rgb(147, 100, 255);
+}
+
+.menu-footer a{
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-footer a:visited,
+.menu-footer a:active,
+.menu-footer a:focus {
+    color: grey;
+}
+
+.logo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navigation {
+    padding-right: 50px;
+}
+
+/* .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+} */
+
+.main-content {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+}
+
+.destination {
+    margin-bottom: 50px;
+}
+
+/* ---------Flex---------- */
+.row {
+    display: flex;
+    gap: 24px;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.center {
+    align-items: center;
+}
+
+/* ---------Text---------- */
+.text-head {
+    color: rgb(0, 0, 50);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+/* ---------Special Text---------- */
+.title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    color: rgb(0, 0, 80);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-family: Arial;
+    color: rgb(138, 138, 138);
+}
+
+.quotes {
+    font-family:'Times New Roman';
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.validation{
+    color: rgb(218, 0, 0);
+    font-size: 0.7rem;
+    margin-top: -10px;
+}
+
+.our-package {
+    background-color: rgb(231, 231, 231);
+    color: rgba(12, 12, 85, 0.76);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.city {
+    font-size: 1.5rem;
+}
+
+.city-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.closing {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: rgb(0, 0, 80);
+}
+
+.contact {
+    margin: 50px 0px;
+}
+
+.testimoni {
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    background: #e9e9e9;
+    padding: 20px 40px;
+    border-radius: 8px;
+    /* max-width: 500px; */
+}
+
+.bg-image {
+    /* max-width: 500px; */
+    width: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.main-banner {
+    max-width: 100%;
+    width: 1200px;
+    height: 500px;
+    object-fit: cover;
+    display: none;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border: 8px solid #ffffff;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+
+    .navbar {
+        position: absolute;
+        background-color: rgb(0, 0, 80);
+        color: white;
+    }
+
+    .logo {
+        padding-left: 50px;
+    }
+
+    .navigation {
+        padding-right: 50px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .title{
+        padding-top: 150px;
+    }
+
+    .destination {
+        margin-bottom: 5px;
+    }
+
+    .bg-image {
+        width: 700px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .logo {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        align-items: center;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0px;
+        align-items: center;
+    }
+
+    .menu{
+        margin-bottom: 15px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .destination{
+        margin-bottom: 5px;
+    }
+
+    .bg-image{
+        width: 600px;
+    }
+
+    .center,
+    .contact {
+        max-width: 100%;
+        text-align: center;
+    }
+
+}
