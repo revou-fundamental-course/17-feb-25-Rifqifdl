@@ -329,6 +329,11 @@ form button:active {
     .navbar {
         flex-direction: column;
     }
+
+    .main-banner{
+        width: 300px;
+        height: 100px;
+    }
     
     .logo {
         display: flex;
